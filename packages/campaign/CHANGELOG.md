@@ -1,5 +1,16 @@
 # @react-vant-next/campaign
 
+## 1.0.1
+
+### Patch Changes
+
+- remove console.log
+- Updated dependencies
+  - @react-vant-next/hooks@1.0.1
+  - @react-vant-next/icons@1.0.1
+  - @react-vant-next/utils@1.0.1
+  - @react-vant-next/ui@1.0.1
+
 ## 1.0.0
 
 ### Major Changes

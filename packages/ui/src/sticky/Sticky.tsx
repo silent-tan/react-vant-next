@@ -118,7 +118,6 @@ const Sticky: React.FC<StickyProps> = (p) => {
         newState.fixed = clientHeight - offset < rootRect.bottom;
       }
     }
-    console.log("updateState", newState);
     updateState(newState);
     emitScrollRef.current?.({
       scrollTop,

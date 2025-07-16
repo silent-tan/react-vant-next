@@ -1,7 +1,7 @@
 {
   "name": "@react-vant-next/utils",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Mobile UI Components based on Vant UI - Next Generation",
   "author": "silentlee",
   "license": "MIT",
