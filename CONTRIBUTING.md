@@ -2,7 +2,7 @@
 
 ### 介绍
 
-感谢你使用 React Vant。
+感谢你使用 React Vant Next。
 
 以下是关于提交反馈或代码的指南。在提交 issue 或者 PR 之前，请先花几分钟时间阅读以下文字。
 
@@ -14,26 +14,23 @@
 
 ```bash
 # 克隆仓库
-https://github.com/3lang3/react-vant.git
+https://github.com/silentlee/react-vant-next.git
 
 # 安装依赖
-cd my-app && npm run bootstrap
+cd my-app && pnpm i
 
 # 进入开发模式，浏览器访问 http://localhost:8080
-npm run start
+pnpm dev
 ```
 
 ### 目录结构
 
 - 仓库的组件代码位于 src 下，每个组件一个文件夹
-- docs 目录下是文档网站的代码，本地开发时可以在目录下运行 npm run start 开启文档网站
 
 项目主要目录如下：
 
 ```
-react-vant
-├─ build     # 构建
-├─ docs      # 文档
+react-vant-next
 ├─ packages  # 子包
 ├─ test      # 单测
 └─ typings     # 类型

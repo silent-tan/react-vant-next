@@ -1,0 +1,35 @@
+{
+  "name": "real-world",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "app": "vite",
+    "format": "eslint . --fix",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "@react-vant-next/icons": "workspace:*",
+    "@react-vant-next/hooks": "workspace:*",
+    "@react-vant-next/ui": "workspace:*",
+    "@react-vant-next/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vant/touch-emulator": "^1.4.0",
+    "@vitejs/plugin-react": "^4.6.0",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-storybook": "^9.0.14",
+    "globals": "^16.2.0",
+    "react-docgen-typescript": "2.4.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5"
+  }
+}

@@ -1,36 +1,36 @@
-name-template: 'v$RESOLVED_VERSION 🌈'
-tag-template: 'v$RESOLVED_VERSION'
+name-template: v$RESOLVED_VERSION 🌈
+tag-template: v$RESOLVED_VERSION
 categories:
-  - title: '⭐ 新特性'
+  - title: ⭐ 新特性
     labels:
-      - '🧑‍🎄 feature'
-  - title: '💄 优化'
+      - 🧑‍🎄 feature
+  - title: 💄 优化
     labels:
-      - '🧑‍🚀 enhance'
-      - '💄UI'
-  - title: '🐛 修复'
+      - 🧑‍🚀 enhance
+      - 💄UI
+  - title: 🐛 修复
     labels:
-      - '🕵️‍♂️ bug'
+      - 🕵️‍♂️ bug
 autolabeler:
-  - label: '🧑‍🎄 feature'
+  - label: 🧑‍🎄 feature
     branch:
-      - '/feat-.+/'
+      - "/feat-.+/"
     title:
-      - '/feat/i'
-  - label: '🕵️‍♂️ bug'
+      - /feat/i
+  - label: 🕵️‍♂️ bug
     branch:
-      - '/fix-.+/'
+      - "/fix-.+/"
     title:
-      - '/fix/i'
-  - label: '🧑‍🚀 enhance'
+      - /fix/i
+  - label: 🧑‍🚀 enhance
     branch:
-      - '/enhance-.+/'
-  - label: '💄UI'
+      - "/enhance-.+/"
+  - label: 💄UI
     branch:
-      - '/style-.+/'
+      - "/style-.+/"
 exclude-contributors:
-  - '3lang3'
-change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+  - silentlee
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
 template: |
   ## 发布内容
@@ -39,4 +39,4 @@ template: |
 
   ***
 
-  完整内容，请参见 [comparison between $PREVIOUS_TAG and v$NEXT_MINOR_VERSION](https://github.com/3lang3/react-vant/compare/$PREVIOUS_TAG...v$NEXT_MINOR_VERSION)
+  完整内容，请参见 [comparison between $PREVIOUS_TAG and v$NEXT_MINOR_VERSION](https://github.com/silentlee/react-vant-next/compare/$PREVIOUS_TAG...v$NEXT_MINOR_VERSION)

@@ -1,6 +1,6 @@
 name: 🐛 Bug Report
-description: Something is wrong with React Vant.
-title: '🐛 [Bug]: '
+description: Something is wrong with React Vant Next.
+title: "🐛 [Bug]: "
 labels:
   - bug
 body:
@@ -15,34 +15,26 @@ body:
         support or usage questions. Questions here don't have as much visibility as they do elsewhere. Before
         you ask a question, here are some resources to get help first:
 
-        - Read the docs: https://react-vant.3lang.dev/guide/quickstart
-        - Explore examples: https://react-vant.3lang.dev/components/flex
-        - Ask in GitHub Discussions: https://github.com/3lang3/react-vant/discussions
-        - Ask in WeChat: add this WeChat, we will invite you to the WeChat discussion group later
-        <img src="https://user-images.githubusercontent.com/33956589/144778828-97660d67-69a1-4eee-8ef1-3c7f91ab48b9.png" width = "200" height = "200" alt="WeChat" align=center />
-
+        - Check our GitHub repository: https://github.com/silentlee/react-vant-next
+        - Ask in GitHub Discussions: https://github.com/silentlee/react-vant-next/discussions
 
         ### Test Case Starter:
-        - [react template](https://codesandbox.io/s/react-vant-template-eez7b)
-        - [nextjs template](https://codesandbox.io/s/react-vant-nextjs-template-uepyw)
+        - Create a minimal reproduction case using React and @react-vant-next/ui
 
         ### Code Example:
 
-        - [Create React App](https://github.com/3lang3/react-vant-template/tree/main/next/create-react-app)
-        - [Umi](https://github.com/3lang3/react-vant-template/tree/main/next/umi)
-        - [Next.js](https://github.com/3lang3/react-vant-template/tree/main/next/nextjs)
-        - [Vite](https://github.com/3lang3/react-vant-template/tree/main/next/vite)
+        - Check our repository for example code
 
   - type: checkboxes
     id: packages
     attributes:
-      label: Which React Vant packages are impacted?
+      label: Which React Vant Next packages are impacted?
       options:
-        - label: '`react-vant` (React Vant core)'
-        - label: '`react-vant-icons`(React Vant Icon)'
+        - label: "`@react-vant-next/ui` (React Vant Next core)"
+        - label: "`@react-vant-next/icons` (React Vant Next Icon)"
   - type: input
     attributes:
-      label: What version of React Vant are you using?
+      label: What version of React Vant Next are you using?
     validations:
       required: true
   - type: input
@@ -50,7 +42,7 @@ body:
       label: Reproduce live demo(codesandebox or stackblitz)?
   - type: markdown
     attributes:
-      value: 'demo: https://codesandbox.io/s/3mhk4b?resolutionWidth=320&resolutionHeight=675&file=/App.tsx'
+      value: Please provide a link to a minimal reproduction of the issue
   - type: textarea
     attributes:
       label: Descripition
@@ -59,4 +51,4 @@ body:
       required: true
   - type: markdown
     attributes:
-      value: 'Thanks for completing our form!'
+      value: Thanks for completing our form!

@@ -6,7 +6,7 @@
 .now
 .env
 .env.*
-.vscode
+.turbo
 
 # npm
 node_modules
@@ -29,3 +29,5 @@ changelog.generated.md
 
 # tests
 tests/coverage
+
+storybook-static

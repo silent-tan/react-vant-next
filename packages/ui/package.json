@@ -1,0 +1,134 @@
+{
+  "name": "@react-vant-next/ui",
+  "version": "1.0.0",
+  "description": "React Mobile UI Components based on Vant UI - Next Generation",
+  "author": "silentlee",
+  "license": "MIT",
+  "homepage": "https://github.com/silentlee/react-vant-next",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:silentlee/react-vant-next.git",
+    "branch": "main",
+    "package": "./packages/ui"
+  },
+  "keywords": [
+    "ui",
+    "react",
+    "mobile",
+    "components",
+    "component",
+    "design",
+    "framework",
+    "frontend",
+    "react-component"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./es/index.js",
+      "require": "./lib/index.js"
+    },
+    "./index.css": {
+      "import": "./es/index.css",
+      "require": "./lib/index.css"
+    },
+    "./styles/*": "./dist/styles/*",
+    "./styles/mixins/*": "./dist/styles/mixins/*"
+  },
+  "files": [
+    "dist",
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "app": "pnpm dev:storybook",
+    "storybook": "pnpm dlx npm-run-all clean:cache dev:storybook",
+    "dev:storybook": "cross-env NODE_ENV=development STORYBOOK_DISABLE_TELEMETRY=1 storybook dev -p 6006 --no-open",
+    "clean": "pnpm dlx npm-run-all clean:bundle clean:cache clean:deps",
+    "clean:cache": "pnpm dlx rimraf .turbo ./node_modules/.cache/storybook",
+    "clean:bundle": "pnpm dlx rimraf dist es lib",
+    "clean:deps": "pnpm dlx rimraf node_modules",
+    "lint": "eslint src --ext ts,tsx --fix",
+    "lint:tsx": "eslint src --ext ts,tsx",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "build:storybook": "cross-env NODE_ENV=production storybook build",
+    "dev": "cross-env NODE_ENV=development rollup -c -w",
+    "format": "eslint --fix",
+    "test-storybook": "vitest run --project=storybook"
+  },
+  "browserslist": [
+    "Android >= 4.0",
+    "iOS >= 8"
+  ],
+  "peerDependencies": {
+    "@react-spring/web": "^9.7.5",
+    "@react-vant-next/hooks": "workspace:*",
+    "@react-vant-next/icons": "workspace:*",
+    "@react-vant-next/utils": "workspace:*",
+    "@use-gesture/react": "10.3.1",
+    "@vant/popperjs": "^1.1.0",
+    "clsx": ">=2.1.1",
+    "rc-field-form": "^1.26.4",
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0",
+    "react-is": ">=19.1.0",
+    "react-transition-group": ">=4.4.5"
+  },
+  "dependencies": {
+    "@react-spring/web": "^9.7.5",
+    "@react-vant-next/hooks": "workspace:*",
+    "@react-vant-next/icons": "workspace:*",
+    "@react-vant-next/utils": "workspace:*",
+    "@use-gesture/react": "10.3.1",
+    "@vant/popperjs": "^1.1.0",
+    "clsx": ">=2.1.1",
+    "rc-field-form": "^1.26.4",
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0",
+    "react-is": ">=19.1.0",
+    "react-transition-group": ">=4.4.5"
+  },
+  "devDependencies": {
+    "@babel/core": "7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-replace": "^6.0.2",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@storybook/addon-a11y": "^9.0.15",
+    "@storybook/addon-docs": "^9.0.15",
+    "@storybook/addon-onboarding": "^9.0.15",
+    "@storybook/addon-vitest": "^9.0.15",
+    "@storybook/react": "^9.0.15",
+    "@storybook/react-vite": "^9.0.15",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/react-is": "^19.0.0",
+    "@types/react-transition-group": "4.4.12",
+    "@vant/area-data": "2.0.0",
+    "@vant/touch-emulator": "^1.4.0",
+    "eslint-plugin-storybook": "^9.0.14",
+    "globals": "^16.2.0",
+    "less": "^4.3.0",
+    "playwright": "^1.53.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "rollup": "4.44.1",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-dts": "^6.2.1",
+    "rollup-plugin-less": "^1.1.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^9.0.15",
+    "tslib": "^2.8.1",
+    "vitest": "^3.2.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

@@ -1,0 +1,29 @@
+import type { SVGProps } from "react"
+import type { IconBaseProps } from "./IconBase"
+import IconBase from "./IconBase"
+
+function SvgIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 1024 1024"
+      fill="currentColor"
+      {...props}
+    >
+      <path
+        fillRule="evenodd"
+        d="M500 55.556c245.46 0 444.444 198.984 444.444 444.444S745.46 944.444 500 944.444 55.556 745.46 55.556 500 254.54 55.556 500 55.556m176.441 267.887c-10.848-10.848-28.436-10.848-39.284 0L499.665 460.936 362.172 323.443c-10.848-10.848-28.436-10.848-39.284 0s-10.848 28.436 0 39.284L460.38 500.22 322.888 637.713c-10.848 10.848-10.848 28.436 0 39.284s28.436 10.848 39.284 0l137.493-137.493 137.492 137.493c10.848 10.848 28.436 10.848 39.284 0s10.848-28.436 0-39.284L538.948 500.22l137.493-137.493c10.848-10.848 10.848-28.436 0-39.284"
+      />
+    </svg>
+  )
+}
+function SvgClear(props: Omit<IconBaseProps, "name">) {
+  return (
+    <IconBase name={SvgClear.name} {...props}>
+      <SvgIcon />
+    </IconBase>
+  )
+}
+export default SvgClear

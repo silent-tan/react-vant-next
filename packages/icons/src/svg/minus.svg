@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>minus</title>
+    <g id="minus" stroke="none" stroke-width="1"  fill-rule="evenodd">
+        <g id="圆角-关闭" transform="translate(100, 462)"  fill-rule="nonzero">
+            <path d="M437.5,75.5 L362.5,75.5 L37.5,75.5 C16.7893219,75.5 0,58.7106781 0,38 C0,17.2893219 16.7893219,0.5 37.5,0.5 L762.5,0.5 C783.210678,0.5 800,17.2893219 800,38 C800,58.7106781 783.210678,75.5 762.5,75.5 L437.5,75.5 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

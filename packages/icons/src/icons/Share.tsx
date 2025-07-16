@@ -1,0 +1,29 @@
+import type { SVGProps } from "react"
+import type { IconBaseProps } from "./IconBase"
+import IconBase from "./IconBase"
+
+function SvgIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 1024 1024"
+      fill="currentColor"
+      {...props}
+    >
+      <path
+        fillRule="nonzero"
+        d="M577.281 140.477c0-22.634 13.21-28.354 29.815-12.47L931.54 438.626c16.461 15.782 16.585 41.317.309 57.037L606.787 809.407c-16.296 15.72-29.506 9.917-29.506-12.552V632.761C101.541 632.76 56 881.36 56 881.36s-7.34-501.954 521.281-576.77z"
+      />
+    </svg>
+  )
+}
+function SvgShare(props: Omit<IconBaseProps, "name">) {
+  return (
+    <IconBase name={SvgShare.name} {...props}>
+      <SvgIcon />
+    </IconBase>
+  )
+}
+export default SvgShare

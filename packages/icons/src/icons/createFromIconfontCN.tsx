@@ -1,0 +1,45 @@
+import type { IconBaseProps } from "./IconBase"
+import * as React from "react"
+import IconBase from "./IconBase"
+
+const cache: string[] = []
+
+function createFromIconfontCN(scriptUrl: string | string[]) {
+  const passUrl = Array.isArray(scriptUrl) ? scriptUrl : [scriptUrl]
+  const urls = passUrl.filter(u => !cache.includes(u))
+  if (
+    typeof document !== "undefined"
+    && typeof window !== "undefined"
+    && typeof document.createElement === "function"
+    && typeof scriptUrl === "string"
+    && urls.length
+  ) {
+    urls.forEach((u) => {
+      const script = document.createElement("script")
+      script.setAttribute("src", u)
+      script.setAttribute("data-namespace", u)
+      cache.push(u)
+      document.body.appendChild(script)
+    })
+  }
+
+  return ({ ref, ...props }: Omit<IconBaseProps, "children">) => {
+    const { name } = props
+
+    let content: React.ReactNode
+    if (name) {
+      content = (
+        <svg width="1em" height="1em" fill="currentColor">
+          <use xlinkHref={`#${name}`} />
+        </svg>
+      )
+    }
+    return (
+      <IconBase {...props} ref={ref}>
+        {content}
+      </IconBase>
+    )
+  }
+}
+
+export default createFromIconfontCN

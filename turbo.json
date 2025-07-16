@@ -1,0 +1,81 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", "es/**", "lib/**"],
+      "cache": true,
+      "inputs": ["src/**", "package.json", "rollup.config.js", "rollup.config.ts", "tsconfig.json"]
+    },
+    "dev": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true,
+      "inputs": ["src/**", "package.json", "rollup.config.js", "rollup.config.ts"]
+    },
+    "app": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true,
+      "inputs": ["src/**", ".storybook/**", "package.json"]
+    },
+    "storybook": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true,
+      "inputs": ["src/**", ".storybook/**", "package.json"]
+    },
+    "build:storybook": {
+      "dependsOn": ["^build"],
+      "outputs": ["storybook-static/**"],
+      "cache": true,
+      "inputs": ["src/**", ".storybook/**", "package.json"]
+    },
+    "lint": {
+      "dependsOn": ["^build"],
+      "outputs": [],
+      "cache": true,
+      "inputs": ["src/**", ".eslintrc*", "package.json"]
+    },
+    "format": {
+      "dependsOn": ["^build"],
+      "outputs": [],
+      "cache": true,
+      "inputs": ["src/**", ".eslintrc*", "package.json"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": [],
+      "cache": true,
+      "inputs": ["src/**", "test/**", "vitest.config.*", "package.json"]
+    },
+    "test-storybook": {
+      "dependsOn": ["^build", "build:storybook"],
+      "outputs": [],
+      "cache": true,
+      "inputs": ["src/**", ".storybook/**", "vitest.config.*", "package.json"]
+    },
+    "clean": {
+      "cache": false,
+      "outputs": []
+    },
+    "pack": {
+      "dependsOn": ["build"],
+      "outputs": ["*.tgz"],
+      "cache": true
+    }
+  },
+  "globalDependencies": [
+    "package.json",
+    "turbo.json",
+    "tsconfig.json",
+    "rollup.config.js",
+    "rollup.config.ts",
+    ".eslintrc*",
+    "vitest.config.*"
+  ],
+  "globalEnv": [
+    "NODE_ENV",
+    "STORYBOOK_DISABLE_TELEMETRY"
+  ]
+}
