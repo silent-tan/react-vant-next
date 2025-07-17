@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgUmbrellaCircle(props: Omit<IconBaseProps, "name">) {
+export function UmbrellaCircle(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgUmbrellaCircle.name} {...props}>
+    <IconBase name={UmbrellaCircle.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgUmbrellaCircle
+export default UmbrellaCircle

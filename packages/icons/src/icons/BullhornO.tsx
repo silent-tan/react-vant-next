@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBullhornO(props: Omit<IconBaseProps, "name">) {
+export function BullhornO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBullhornO.name} {...props}>
+    <IconBase name={BullhornO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBullhornO
+export default BullhornO

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgReplay(props: Omit<IconBaseProps, "name">) {
+export function Replay(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgReplay.name} {...props}>
+    <IconBase name={Replay.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgReplay
+export default Replay

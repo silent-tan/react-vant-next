@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgEllipsis(props: Omit<IconBaseProps, "name">) {
+export function Ellipsis(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgEllipsis.name} {...props}>
+    <IconBase name={Ellipsis.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgEllipsis
+export default Ellipsis

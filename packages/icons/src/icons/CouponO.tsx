@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgCouponO(props: Omit<IconBaseProps, "name">) {
+export function CouponO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgCouponO.name} {...props}>
+    <IconBase name={CouponO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgCouponO
+export default CouponO

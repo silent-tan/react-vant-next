@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgClosedEye(props: Omit<IconBaseProps, "name">) {
+export function ClosedEye(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgClosedEye.name} {...props}>
+    <IconBase name={ClosedEye.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgClosedEye
+export default ClosedEye

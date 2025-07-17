@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgManager(props: Omit<IconBaseProps, "name">) {
+export function Manager(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgManager.name} {...props}>
+    <IconBase name={Manager.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgManager
+export default Manager

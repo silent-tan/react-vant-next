@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgQrInvalid(props: Omit<IconBaseProps, "name">) {
+export function QrInvalid(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgQrInvalid.name} {...props}>
+    <IconBase name={QrInvalid.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgQrInvalid
+export default QrInvalid

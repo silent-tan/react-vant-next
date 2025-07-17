@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgPointGiftO(props: Omit<IconBaseProps, "name">) {
+export function PointGiftO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgPointGiftO.name} {...props}>
+    <IconBase name={PointGiftO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgPointGiftO
+export default PointGiftO

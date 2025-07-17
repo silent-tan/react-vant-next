@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgSign(props: Omit<IconBaseProps, "name">) {
+export function Sign(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgSign.name} {...props}>
+    <IconBase name={Sign.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgSign
+export default Sign

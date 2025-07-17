@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgPauseCircleO(props: Omit<IconBaseProps, "name">) {
+export function PauseCircleO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgPauseCircleO.name} {...props}>
+    <IconBase name={PauseCircleO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgPauseCircleO
+export default PauseCircleO

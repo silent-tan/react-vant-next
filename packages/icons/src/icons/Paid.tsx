@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgPaid(props: Omit<IconBaseProps, "name">) {
+export function Paid(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgPaid.name} {...props}>
+    <IconBase name={Paid.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgPaid
+export default Paid

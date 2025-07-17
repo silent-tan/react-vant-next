@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgShrink(props: Omit<IconBaseProps, "name">) {
+export function Shrink(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgShrink.name} {...props}>
+    <IconBase name={Shrink.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgShrink
+export default Shrink

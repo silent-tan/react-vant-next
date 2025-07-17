@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgPendingPayment(props: Omit<IconBaseProps, "name">) {
+export function PendingPayment(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgPendingPayment.name} {...props}>
+    <IconBase name={PendingPayment.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgPendingPayment
+export default PendingPayment

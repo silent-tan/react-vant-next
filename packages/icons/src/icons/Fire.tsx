@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgFire(props: Omit<IconBaseProps, "name">) {
+export function Fire(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgFire.name} {...props}>
+    <IconBase name={Fire.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgFire
+export default Fire

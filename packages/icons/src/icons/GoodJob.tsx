@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgGoodJob(props: Omit<IconBaseProps, "name">) {
+export function GoodJob(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgGoodJob.name} {...props}>
+    <IconBase name={GoodJob.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgGoodJob
+export default GoodJob

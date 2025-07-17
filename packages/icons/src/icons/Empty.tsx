@@ -14,11 +14,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     />
   )
 }
-function SvgEmpty(props: Omit<IconBaseProps, "name">) {
+export function Empty(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgEmpty.name} {...props}>
+    <IconBase name={Empty.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgEmpty
+export default Empty

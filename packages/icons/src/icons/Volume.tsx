@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgVolume(props: Omit<IconBaseProps, "name">) {
+export function Volume(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgVolume.name} {...props}>
+    <IconBase name={Volume.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgVolume
+export default Volume

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgShieldO(props: Omit<IconBaseProps, "name">) {
+export function ShieldO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgShieldO.name} {...props}>
+    <IconBase name={ShieldO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgShieldO
+export default ShieldO

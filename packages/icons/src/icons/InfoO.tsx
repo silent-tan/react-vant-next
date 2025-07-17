@@ -23,11 +23,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgInfoO(props: Omit<IconBaseProps, "name">) {
+export function InfoO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgInfoO.name} {...props}>
+    <IconBase name={InfoO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgInfoO
+export default InfoO

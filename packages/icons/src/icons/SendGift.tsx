@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgSendGift(props: Omit<IconBaseProps, "name">) {
+export function SendGift(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgSendGift.name} {...props}>
+    <IconBase name={SendGift.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgSendGift
+export default SendGift

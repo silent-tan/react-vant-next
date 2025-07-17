@@ -22,11 +22,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBrowsingHistoryO(props: Omit<IconBaseProps, "name">) {
+export function BrowsingHistoryO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBrowsingHistoryO.name} {...props}>
+    <IconBase name={BrowsingHistoryO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBrowsingHistoryO
+export default BrowsingHistoryO

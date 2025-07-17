@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgCircle(props: Omit<IconBaseProps, "name">) {
+export function Circle(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgCircle.name} {...props}>
+    <IconBase name={Circle.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgCircle
+export default Circle

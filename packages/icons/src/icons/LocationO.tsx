@@ -21,11 +21,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgLocationO(props: Omit<IconBaseProps, "name">) {
+export function LocationO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgLocationO.name} {...props}>
+    <IconBase name={LocationO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgLocationO
+export default LocationO

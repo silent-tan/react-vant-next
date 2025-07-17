@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgHotelO(props: Omit<IconBaseProps, "name">) {
+export function HotelO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgHotelO.name} {...props}>
+    <IconBase name={HotelO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgHotelO
+export default HotelO

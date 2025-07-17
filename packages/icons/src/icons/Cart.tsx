@@ -23,11 +23,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgCart(props: Omit<IconBaseProps, "name">) {
+export function Cart(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgCart.name} {...props}>
+    <IconBase name={Cart.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgCart
+export default Cart

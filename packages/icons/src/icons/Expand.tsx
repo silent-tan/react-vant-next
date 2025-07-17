@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgExpand(props: Omit<IconBaseProps, "name">) {
+export function Expand(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgExpand.name} {...props}>
+    <IconBase name={Expand.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgExpand
+export default Expand

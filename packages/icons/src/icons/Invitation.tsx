@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgInvitation(props: Omit<IconBaseProps, "name">) {
+export function Invitation(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgInvitation.name} {...props}>
+    <IconBase name={Invitation.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgInvitation
+export default Invitation

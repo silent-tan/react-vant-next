@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgSearch(props: Omit<IconBaseProps, "name">) {
+export function Search(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgSearch.name} {...props}>
+    <IconBase name={Search.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgSearch
+export default Search

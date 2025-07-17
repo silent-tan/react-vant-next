@@ -22,11 +22,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBillO(props: Omit<IconBaseProps, "name">) {
+export function BillO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBillO.name} {...props}>
+    <IconBase name={BillO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBillO
+export default BillO

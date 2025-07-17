@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgMinus(props: Omit<IconBaseProps, "name">) {
+export function Minus(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgMinus.name} {...props}>
+    <IconBase name={Minus.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgMinus
+export default Minus

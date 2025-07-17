@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgRevoke(props: Omit<IconBaseProps, "name">) {
+export function Revoke(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgRevoke.name} {...props}>
+    <IconBase name={Revoke.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgRevoke
+export default Revoke

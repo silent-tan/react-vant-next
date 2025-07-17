@@ -26,11 +26,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBirthdayCakeO(props: Omit<IconBaseProps, "name">) {
+export function BirthdayCakeO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBirthdayCakeO.name} {...props}>
+    <IconBase name={BirthdayCakeO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBirthdayCakeO
+export default BirthdayCakeO

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgThumbCircleO(props: Omit<IconBaseProps, "name">) {
+export function ThumbCircleO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgThumbCircleO.name} {...props}>
+    <IconBase name={ThumbCircleO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgThumbCircleO
+export default ThumbCircleO

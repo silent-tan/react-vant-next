@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgPhotoFail(props: Omit<IconBaseProps, "name">) {
+export function PhotoFail(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgPhotoFail.name} {...props}>
+    <IconBase name={PhotoFail.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgPhotoFail
+export default PhotoFail

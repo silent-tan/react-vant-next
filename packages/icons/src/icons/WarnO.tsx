@@ -22,11 +22,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgWarnO(props: Omit<IconBaseProps, "name">) {
+export function WarnO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgWarnO.name} {...props}>
+    <IconBase name={WarnO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgWarnO
+export default WarnO

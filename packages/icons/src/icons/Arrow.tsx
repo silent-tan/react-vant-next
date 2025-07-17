@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgArrow(props: Omit<IconBaseProps, "name">) {
+export function Arrow(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgArrow.name} {...props}>
+    <IconBase name={Arrow.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgArrow
+export default Arrow

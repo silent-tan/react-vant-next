@@ -1,5 +1,15 @@
 # @react-vant-next/ui
 
+## 1.0.2
+
+### Patch Changes
+
+- 调整构建顺序&降级 react-transition-group
+- Updated dependencies
+  - @react-vant-next/hooks@1.0.2
+  - @react-vant-next/icons@1.0.2
+  - @react-vant-next/utils@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes

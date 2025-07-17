@@ -18,11 +18,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgExchange(props: Omit<IconBaseProps, "name">) {
+export function Exchange(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgExchange.name} {...props}>
+    <IconBase name={Exchange.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgExchange
+export default Exchange

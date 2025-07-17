@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgWapNav(props: Omit<IconBaseProps, "name">) {
+export function WapNav(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgWapNav.name} {...props}>
+    <IconBase name={WapNav.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgWapNav
+export default WapNav

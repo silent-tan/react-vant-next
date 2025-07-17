@@ -57,6 +57,21 @@ module.exports = {
     importAsts.push(iconBasePropsImportAst)
     importAsts.push(iconBaseImportAst)
 
+    const comName = componentName.replace("Svg", "")
+
+    const transformExports = exports.map((exp) => {
+      if (exp.type === "ExportDefaultDeclaration") {
+        return {
+          type: "ExportDefaultDeclaration",
+          declaration: {
+            type: "Identifier",
+            name: exp.declaration.name.replace("Svg", ""),
+          },
+        }
+      }
+      return exp
+    })
+
     return tpl`${importAsts}
 ${interfaces}
 
@@ -64,11 +79,11 @@ function SvgIcon(${props}) {
   return ${jsx}
 }
 
-function ${componentName}(props: Omit<IconBaseProps, "name">) {
-  return <IconBase name={${componentName}.name} {...props}><SvgIcon /></IconBase>
+export function ${comName}(props: Omit<IconBaseProps, "name">) {
+  return <IconBase name={${comName}.name} {...props}><SvgIcon /></IconBase>
 }
 
-${exports};
+${transformExports};
 `
   },
 }

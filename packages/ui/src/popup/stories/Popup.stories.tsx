@@ -3,7 +3,9 @@ import { useState } from "react";
 import { expect, within } from "storybook/test";
 import Button from "../../button";
 import Cell from "../../cell";
+import PositionDemo from "../demo/position";
 import Popup from "../index";
+
 import "../demo/style.less";
 
 // 更多关于如何设置故事的信息: https://storybook.js.org/docs/writing-stories#default-export
@@ -13,7 +15,6 @@ const meta = {
   tags: ["autodocs"],
   parameters: {
     // 可选，控制故事如何在 Storybook 中显示
-    layout: "centered",
   },
   // 更多关于 argTypes 的信息: https://storybook.js.org/docs/api/argtypes
   argTypes: {
@@ -152,37 +153,8 @@ export const Basic: Story = {
 
 // 弹出位置
 export const Position: Story = {
-  render: (args) => {
-    const [position, setPosition] = useState<"center" | "top" | "right" | "bottom" | "left">("center");
-    const [visible, setVisible] = useState(false);
-
-    const showPopup = (pos: "center" | "top" | "right" | "bottom" | "left") => {
-      setPosition(pos);
-      setVisible(true);
-    };
-
-    return (
-      <>
-        <Cell title="顶部弹出" isLink onClick={() => showPopup("top")} />
-        <Cell title="底部弹出" isLink onClick={() => showPopup("bottom")} />
-        <Cell title="左侧弹出" isLink onClick={() => showPopup("left")} />
-        <Cell title="右侧弹出" isLink onClick={() => showPopup("right")} />
-        <Cell title="中间弹出" isLink onClick={() => showPopup("center")} />
-
-        <Popup
-          {...args}
-          visible={visible}
-          position={position}
-          style={{
-            padding: "30px 50px",
-            height: position === "left" || position === "right" ? "100%" : "auto",
-          }}
-          onClose={() => setVisible(false)}
-        >
-          {position}
-        </Popup>
-      </>
-    );
+  render: () => {
+    return <PositionDemo />;
   },
   args: {},
   parameters: {
@@ -192,6 +164,52 @@ export const Position: Story = {
       },
       source: {
         language: "tsx",
+        code: `
+import type { PopupPosition } from "@react-vant-next/ui";
+import { Cell, Popup } from "@react-vant-next/ui";
+import React, { useState } from "react";
+
+export default function PositionDemo() {
+  const [state, setState] = useState<PopupPosition>("");
+
+  const onClose = () => setState("");
+
+  return (
+    <>
+      <Cell title="顶部弹出" isLink onClick={() => setState("top")} />
+      <Cell title="底部弹出" isLink onClick={() => setState("bottom")} />
+      <Cell title="左侧弹出" isLink onClick={() => setState("left")} />
+      <Cell title="右侧弹出" isLink onClick={() => setState("right")} />
+
+      <Popup
+        visible={state === "top"}
+        style={{ height: "30%" }}
+        position="top"
+        onClose={onClose}
+      />
+      <Popup
+        visible={state === "bottom"}
+        style={{ height: "30%" }}
+        position="bottom"
+        onClose={onClose}
+      />
+      <Popup
+        visible={state === "left"}
+        style={{ width: "30%", height: "100%" }}
+        position="left"
+        onClose={onClose}
+      />
+      <Popup
+        visible={state === "right"}
+        style={{ width: "30%", height: "100%" }}
+        position="right"
+        onClose={onClose}
+      />
+    </>
+  );
+};
+
+`,
       },
     },
   },

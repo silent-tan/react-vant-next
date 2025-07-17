@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgDeleteO(props: Omit<IconBaseProps, "name">) {
+export function DeleteO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgDeleteO.name} {...props}>
+    <IconBase name={DeleteO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgDeleteO
+export default DeleteO

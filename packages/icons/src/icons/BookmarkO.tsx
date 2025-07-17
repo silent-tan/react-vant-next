@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBookmarkO(props: Omit<IconBaseProps, "name">) {
+export function BookmarkO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBookmarkO.name} {...props}>
+    <IconBase name={BookmarkO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBookmarkO
+export default BookmarkO

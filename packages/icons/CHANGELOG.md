@@ -1,5 +1,11 @@
 # @react-vant-next/icons
 
+## 1.0.2
+
+### Patch Changes
+
+- 调整构建顺序&降级 react-transition-group
+
 ## 1.0.1
 
 ### Patch Changes

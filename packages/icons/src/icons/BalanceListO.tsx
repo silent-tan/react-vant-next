@@ -23,11 +23,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBalanceListO(props: Omit<IconBaseProps, "name">) {
+export function BalanceListO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBalanceListO.name} {...props}>
+    <IconBase name={BalanceListO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBalanceListO
+export default BalanceListO

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBrowsingHistory(props: Omit<IconBaseProps, "name">) {
+export function BrowsingHistory(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBrowsingHistory.name} {...props}>
+    <IconBase name={BrowsingHistory.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBrowsingHistory
+export default BrowsingHistory

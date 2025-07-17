@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgCashierO(props: Omit<IconBaseProps, "name">) {
+export function CashierO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgCashierO.name} {...props}>
+    <IconBase name={CashierO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgCashierO
+export default CashierO

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgQuestion(props: Omit<IconBaseProps, "name">) {
+export function Question(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgQuestion.name} {...props}>
+    <IconBase name={Question.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgQuestion
+export default Question

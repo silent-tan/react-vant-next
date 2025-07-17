@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgCalendarO(props: Omit<IconBaseProps, "name">) {
+export function CalendarO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgCalendarO.name} {...props}>
+    <IconBase name={CalendarO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgCalendarO
+export default CalendarO

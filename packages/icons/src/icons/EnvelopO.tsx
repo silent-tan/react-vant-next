@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgEnvelopO(props: Omit<IconBaseProps, "name">) {
+export function EnvelopO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgEnvelopO.name} {...props}>
+    <IconBase name={EnvelopO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgEnvelopO
+export default EnvelopO

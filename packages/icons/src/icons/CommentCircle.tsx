@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgCommentCircle(props: Omit<IconBaseProps, "name">) {
+export function CommentCircle(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgCommentCircle.name} {...props}>
+    <IconBase name={CommentCircle.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgCommentCircle
+export default CommentCircle

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgFreePostage(props: Omit<IconBaseProps, "name">) {
+export function FreePostage(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgFreePostage.name} {...props}>
+    <IconBase name={FreePostage.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgFreePostage
+export default FreePostage

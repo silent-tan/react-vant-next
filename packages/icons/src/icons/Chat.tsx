@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgChat(props: Omit<IconBaseProps, "name">) {
+export function Chat(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgChat.name} {...props}>
+    <IconBase name={Chat.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgChat
+export default Chat

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBell(props: Omit<IconBaseProps, "name">) {
+export function Bell(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBell.name} {...props}>
+    <IconBase name={Bell.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBell
+export default Bell

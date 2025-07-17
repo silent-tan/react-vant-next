@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgFilterO(props: Omit<IconBaseProps, "name">) {
+export function FilterO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgFilterO.name} {...props}>
+    <IconBase name={FilterO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgFilterO
+export default FilterO

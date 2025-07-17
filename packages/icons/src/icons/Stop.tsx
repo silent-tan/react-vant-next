@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgStop(props: Omit<IconBaseProps, "name">) {
+export function Stop(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgStop.name} {...props}>
+    <IconBase name={Stop.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgStop
+export default Stop

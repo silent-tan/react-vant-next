@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBag(props: Omit<IconBaseProps, "name">) {
+export function Bag(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBag.name} {...props}>
+    <IconBase name={Bag.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBag
+export default Bag

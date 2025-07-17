@@ -1,7 +1,7 @@
 {
   "name": "@react-vant-next/icons",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Vant Next Icons",
   "license": "MIT",
   "sideEffects": false,
@@ -30,16 +30,13 @@
     "clean:deps": "pnpm dlx rimraf node_modules",
     "export": "pnpm dlx npm-run-all export:icon export:react export:format",
     "export:icon": "node ./scripts/export.mjs",
-    "export:react": "pnpm dlx @svgr/cli -d src/icons src/svg",
+    "export:react": "pnpm dlx @svgr/cli --index-template ./index-template.cjs -d src/icons src/svg",
     "export:format": "pnpm format",
     "format": "eslint --fix"
   },
   "peerDependencies": {
     "react": ">=19",
     "tslib": "^2.4.0"
-  },
-  "dependencies": {
-    "react": ">=19"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.6",

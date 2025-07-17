@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgYouzanShield(props: Omit<IconBaseProps, "name">) {
+export function YouzanShield(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgYouzanShield.name} {...props}>
+    <IconBase name={YouzanShield.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgYouzanShield
+export default YouzanShield

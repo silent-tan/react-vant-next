@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgChartTrendingO(props: Omit<IconBaseProps, "name">) {
+export function ChartTrendingO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgChartTrendingO.name} {...props}>
+    <IconBase name={ChartTrendingO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgChartTrendingO
+export default ChartTrendingO

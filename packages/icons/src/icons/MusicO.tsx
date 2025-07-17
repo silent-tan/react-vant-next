@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgMusicO(props: Omit<IconBaseProps, "name">) {
+export function MusicO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgMusicO.name} {...props}>
+    <IconBase name={MusicO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgMusicO
+export default MusicO

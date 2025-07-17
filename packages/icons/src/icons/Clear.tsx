@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgClear(props: Omit<IconBaseProps, "name">) {
+export function Clear(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgClear.name} {...props}>
+    <IconBase name={Clear.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgClear
+export default Clear

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgUserCircleO(props: Omit<IconBaseProps, "name">) {
+export function UserCircleO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgUserCircleO.name} {...props}>
+    <IconBase name={UserCircleO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgUserCircleO
+export default UserCircleO

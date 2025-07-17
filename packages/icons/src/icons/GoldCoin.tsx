@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgGoldCoin(props: Omit<IconBaseProps, "name">) {
+export function GoldCoin(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgGoldCoin.name} {...props}>
+    <IconBase name={GoldCoin.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgGoldCoin
+export default GoldCoin

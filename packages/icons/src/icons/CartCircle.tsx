@@ -22,11 +22,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgCartCircle(props: Omit<IconBaseProps, "name">) {
+export function CartCircle(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgCartCircle.name} {...props}>
+    <IconBase name={CartCircle.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgCartCircle
+export default CartCircle

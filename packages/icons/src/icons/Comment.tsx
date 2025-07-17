@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgComment(props: Omit<IconBaseProps, "name">) {
+export function Comment(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgComment.name} {...props}>
+    <IconBase name={Comment.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgComment
+export default Comment

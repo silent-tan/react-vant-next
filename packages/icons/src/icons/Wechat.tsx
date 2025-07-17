@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgWechat(props: Omit<IconBaseProps, "name">) {
+export function Wechat(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgWechat.name} {...props}>
+    <IconBase name={Wechat.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgWechat
+export default Wechat

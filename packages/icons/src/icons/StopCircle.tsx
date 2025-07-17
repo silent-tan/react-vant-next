@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgStopCircle(props: Omit<IconBaseProps, "name">) {
+export function StopCircle(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgStopCircle.name} {...props}>
+    <IconBase name={StopCircle.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgStopCircle
+export default StopCircle

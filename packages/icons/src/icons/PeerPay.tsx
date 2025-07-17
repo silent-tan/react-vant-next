@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgPeerPay(props: Omit<IconBaseProps, "name">) {
+export function PeerPay(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgPeerPay.name} {...props}>
+    <IconBase name={PeerPay.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgPeerPay
+export default PeerPay

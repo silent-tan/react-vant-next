@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgPlay(props: Omit<IconBaseProps, "name">) {
+export function Play(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgPlay.name} {...props}>
+    <IconBase name={Play.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgPlay
+export default Play

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgEnlarge(props: Omit<IconBaseProps, "name">) {
+export function Enlarge(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgEnlarge.name} {...props}>
+    <IconBase name={Enlarge.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgEnlarge
+export default Enlarge

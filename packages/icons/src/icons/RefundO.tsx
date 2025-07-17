@@ -21,11 +21,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgRefundO(props: Omit<IconBaseProps, "name">) {
+export function RefundO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgRefundO.name} {...props}>
+    <IconBase name={RefundO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgRefundO
+export default RefundO

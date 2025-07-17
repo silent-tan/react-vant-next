@@ -26,11 +26,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgAfterSale(props: Omit<IconBaseProps, "name">) {
+export function AfterSale(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgAfterSale.name} {...props}>
+    <IconBase name={AfterSale.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgAfterSale
+export default AfterSale

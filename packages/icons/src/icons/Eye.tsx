@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgEye(props: Omit<IconBaseProps, "name">) {
+export function Eye(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgEye.name} {...props}>
+    <IconBase name={Eye.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgEye
+export default Eye

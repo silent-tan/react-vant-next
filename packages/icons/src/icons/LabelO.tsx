@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgLabelO(props: Omit<IconBaseProps, "name">) {
+export function LabelO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgLabelO.name} {...props}>
+    <IconBase name={LabelO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgLabelO
+export default LabelO

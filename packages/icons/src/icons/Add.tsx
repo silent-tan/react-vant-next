@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgAdd(props: Omit<IconBaseProps, "name">) {
+export function Add(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgAdd.name} {...props}>
+    <IconBase name={Add.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgAdd
+export default Add

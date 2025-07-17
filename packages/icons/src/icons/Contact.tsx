@@ -18,11 +18,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgContact(props: Omit<IconBaseProps, "name">) {
+export function Contact(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgContact.name} {...props}>
+    <IconBase name={Contact.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgContact
+export default Contact

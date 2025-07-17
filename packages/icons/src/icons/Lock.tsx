@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgLock(props: Omit<IconBaseProps, "name">) {
+export function Lock(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgLock.name} {...props}>
+    <IconBase name={Lock.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgLock
+export default Lock

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgOtherPay(props: Omit<IconBaseProps, "name">) {
+export function OtherPay(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgOtherPay.name} {...props}>
+    <IconBase name={OtherPay.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgOtherPay
+export default OtherPay

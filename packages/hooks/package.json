@@ -1,6 +1,6 @@
 {
   "name": "@react-vant-next/hooks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Mobile UI Components based on Vant UI - Next Generation",
   "author": "silentlee",
   "license": "MIT",
@@ -61,12 +61,6 @@
     "react": ">=19.0.0",
     "react-dom": ">=19.0.0",
     "tslib": "^2.8.1"
-  },
-  "dependencies": {
-    "@react-vant-next/utils": "workspace:*",
-    "@use-gesture/react": "^10.3.1",
-    "react": ">=19.0.0",
-    "react-dom": ">=19.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.6",

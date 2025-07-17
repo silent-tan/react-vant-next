@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgFontO(props: Omit<IconBaseProps, "name">) {
+export function FontO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgFontO.name} {...props}>
+    <IconBase name={FontO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgFontO
+export default FontO

@@ -18,11 +18,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgEdit(props: Omit<IconBaseProps, "name">) {
+export function Edit(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgEdit.name} {...props}>
+    <IconBase name={Edit.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgEdit
+export default Edit

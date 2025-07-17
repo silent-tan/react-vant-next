@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBarChartO(props: Omit<IconBaseProps, "name">) {
+export function BarChartO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBarChartO.name} {...props}>
+    <IconBase name={BarChartO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBarChartO
+export default BarChartO

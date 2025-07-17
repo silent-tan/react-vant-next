@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBrushO(props: Omit<IconBaseProps, "name">) {
+export function BrushO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBrushO.name} {...props}>
+    <IconBase name={BrushO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBrushO
+export default BrushO

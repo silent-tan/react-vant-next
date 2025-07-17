@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgNewArrival(props: Omit<IconBaseProps, "name">) {
+export function NewArrival(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgNewArrival.name} {...props}>
+    <IconBase name={NewArrival.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgNewArrival
+export default NewArrival

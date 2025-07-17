@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgCertificate(props: Omit<IconBaseProps, "name">) {
+export function Certificate(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgCertificate.name} {...props}>
+    <IconBase name={Certificate.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgCertificate
+export default Certificate

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgVipCard(props: Omit<IconBaseProps, "name">) {
+export function VipCard(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgVipCard.name} {...props}>
+    <IconBase name={VipCard.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgVipCard
+export default VipCard

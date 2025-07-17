@@ -22,11 +22,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgUpgrade(props: Omit<IconBaseProps, "name">) {
+export function Upgrade(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgUpgrade.name} {...props}>
+    <IconBase name={Upgrade.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgUpgrade
+export default Upgrade

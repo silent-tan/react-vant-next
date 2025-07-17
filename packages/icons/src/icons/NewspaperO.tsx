@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgNewspaperO(props: Omit<IconBaseProps, "name">) {
+export function NewspaperO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgNewspaperO.name} {...props}>
+    <IconBase name={NewspaperO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgNewspaperO
+export default NewspaperO

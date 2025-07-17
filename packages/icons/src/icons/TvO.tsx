@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgTvO(props: Omit<IconBaseProps, "name">) {
+export function TvO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgTvO.name} {...props}>
+    <IconBase name={TvO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgTvO
+export default TvO

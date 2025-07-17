@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgTosend(props: Omit<IconBaseProps, "name">) {
+export function Tosend(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgTosend.name} {...props}>
+    <IconBase name={Tosend.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgTosend
+export default Tosend

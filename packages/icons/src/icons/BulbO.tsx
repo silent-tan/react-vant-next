@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBulbO(props: Omit<IconBaseProps, "name">) {
+export function BulbO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBulbO.name} {...props}>
+    <IconBase name={BulbO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBulbO
+export default BulbO

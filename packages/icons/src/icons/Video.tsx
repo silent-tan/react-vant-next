@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgVideo(props: Omit<IconBaseProps, "name">) {
+export function Video(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgVideo.name} {...props}>
+    <IconBase name={Video.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgVideo
+export default Video

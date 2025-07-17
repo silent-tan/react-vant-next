@@ -2,7 +2,7 @@ import type { PopupPosition } from "@react-vant-next/ui";
 import { Cell, Popup } from "@react-vant-next/ui";
 import React, { useState } from "react";
 
-export default () => {
+export default function PositionDemo() {
   const [state, setState] = useState<PopupPosition>("");
 
   const onClose = () => setState("");

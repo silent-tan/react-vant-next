@@ -30,9 +30,8 @@ const plugins = [
 /**
  * dts 构建
  * @param {string[]} inputs
- * @returns
  */
-const dtsBuilder = (inputs) => {
+function dtsBuilder(inputs) {
   return inputs.map((path) => {
     return {
       input: path,
@@ -48,8 +47,8 @@ const dtsBuilder = (inputs) => {
       watch: {
         clearScreen: false,
       },
-    }
-  })
+    };
+  });
 }
 
 export default defineConfig([
@@ -88,6 +87,7 @@ export default defineConfig([
   },
   // 类型定义文件打包配置
   ...dtsBuilder([
+    "src/index.ts",
     "src/create/index.ts",
     "src/dev/index.ts",
     "src/dom/index.ts",
@@ -96,6 +96,5 @@ export default defineConfig([
     "src/lodash-like/index.ts",
     "src/react-util/index.ts",
     "src/validate/index.ts",
-    "src/index.ts",
   ]),
 ]);

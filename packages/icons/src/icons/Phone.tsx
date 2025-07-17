@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgPhone(props: Omit<IconBaseProps, "name">) {
+export function Phone(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgPhone.name} {...props}>
+    <IconBase name={Phone.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgPhone
+export default Phone

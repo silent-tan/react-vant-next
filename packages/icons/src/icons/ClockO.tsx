@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgClockO(props: Omit<IconBaseProps, "name">) {
+export function ClockO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgClockO.name} {...props}>
+    <IconBase name={ClockO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgClockO
+export default ClockO

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgPhoneCircleO(props: Omit<IconBaseProps, "name">) {
+export function PhoneCircleO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgPhoneCircleO.name} {...props}>
+    <IconBase name={PhoneCircleO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgPhoneCircleO
+export default PhoneCircleO

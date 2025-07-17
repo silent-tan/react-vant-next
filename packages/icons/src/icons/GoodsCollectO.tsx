@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgGoodsCollectO(props: Omit<IconBaseProps, "name">) {
+export function GoodsCollectO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgGoodsCollectO.name} {...props}>
+    <IconBase name={GoodsCollectO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgGoodsCollectO
+export default GoodsCollectO

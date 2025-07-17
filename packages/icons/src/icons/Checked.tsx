@@ -18,11 +18,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgChecked(props: Omit<IconBaseProps, "name">) {
+export function Checked(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgChecked.name} {...props}>
+    <IconBase name={Checked.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgChecked
+export default Checked

@@ -22,11 +22,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgClusterO(props: Omit<IconBaseProps, "name">) {
+export function ClusterO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgClusterO.name} {...props}>
+    <IconBase name={ClusterO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgClusterO
+export default ClusterO

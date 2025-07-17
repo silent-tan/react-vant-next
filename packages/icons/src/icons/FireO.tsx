@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgFireO(props: Omit<IconBaseProps, "name">) {
+export function FireO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgFireO.name} {...props}>
+    <IconBase name={FireO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgFireO
+export default FireO

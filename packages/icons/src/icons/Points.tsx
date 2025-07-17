@@ -20,11 +20,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgPoints(props: Omit<IconBaseProps, "name">) {
+export function Points(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgPoints.name} {...props}>
+    <IconBase name={Points.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgPoints
+export default Points

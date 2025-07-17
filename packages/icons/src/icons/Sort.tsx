@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgSort(props: Omit<IconBaseProps, "name">) {
+export function Sort(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgSort.name} {...props}>
+    <IconBase name={Sort.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgSort
+export default Sort

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgStarO(props: Omit<IconBaseProps, "name">) {
+export function StarO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgStarO.name} {...props}>
+    <IconBase name={StarO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgStarO
+export default StarO

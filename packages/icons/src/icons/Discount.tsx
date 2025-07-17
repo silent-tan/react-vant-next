@@ -22,11 +22,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgDiscount(props: Omit<IconBaseProps, "name">) {
+export function Discount(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgDiscount.name} {...props}>
+    <IconBase name={Discount.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgDiscount
+export default Discount

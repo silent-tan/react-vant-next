@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBackTop(props: Omit<IconBaseProps, "name">) {
+export function BackTop(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBackTop.name} {...props}>
+    <IconBase name={BackTop.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBackTop
+export default BackTop

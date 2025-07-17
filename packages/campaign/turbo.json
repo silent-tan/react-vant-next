@@ -1,0 +1,11 @@
+{
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["@react-vant-next/icons#build", "@react-vant-next/utils#build", "@react-vant-next/hooks#build", "@react-vant-next/ui#build"],
+      "outputs": ["dist/**", "es/**", "lib/**"],
+      "cache": true,
+      "inputs": ["src/**", "package.json", "rollup.config.js", "rollup.config.ts", "tsconfig.json"]
+    }
+  }
+}

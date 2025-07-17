@@ -1,6 +1,6 @@
 {
   "name": "@react-vant-next/ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Mobile UI Components based on Vant UI - Next Generation",
   "author": "silentlee",
   "license": "MIT",
@@ -72,21 +72,7 @@
     "react": ">=19.0.0",
     "react-dom": ">=19.0.0",
     "react-is": ">=19.1.0",
-    "react-transition-group": ">=4.4.5"
-  },
-  "dependencies": {
-    "@react-spring/web": "^9.7.5",
-    "@react-vant-next/hooks": "workspace:*",
-    "@react-vant-next/icons": "workspace:*",
-    "@react-vant-next/utils": "workspace:*",
-    "@use-gesture/react": "10.3.1",
-    "@vant/popperjs": "^1.1.0",
-    "clsx": ">=2.1.1",
-    "rc-field-form": "^1.26.4",
-    "react": ">=19.0.0",
-    "react-dom": ">=19.0.0",
-    "react-is": ">=19.1.0",
-    "react-transition-group": ">=4.4.5"
+    "react-transition-group": "4.4.2"
   },
   "devDependencies": {
     "@babel/core": "7.28.0",

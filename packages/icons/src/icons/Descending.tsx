@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgDescending(props: Omit<IconBaseProps, "name">) {
+export function Descending(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgDescending.name} {...props}>
+    <IconBase name={Descending.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgDescending
+export default Descending

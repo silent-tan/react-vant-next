@@ -22,11 +22,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgClose(props: Omit<IconBaseProps, "name">) {
+export function Close(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgClose.name} {...props}>
+    <IconBase name={Close.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgClose
+export default Close

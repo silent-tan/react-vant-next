@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgUnderwayO(props: Omit<IconBaseProps, "name">) {
+export function UnderwayO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgUnderwayO.name} {...props}>
+    <IconBase name={UnderwayO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgUnderwayO
+export default UnderwayO

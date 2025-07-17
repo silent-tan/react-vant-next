@@ -22,11 +22,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgAddO(props: Omit<IconBaseProps, "name">) {
+export function AddO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgAddO.name} {...props}>
+    <IconBase name={AddO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgAddO
+export default AddO

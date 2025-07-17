@@ -22,11 +22,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgQr(props: Omit<IconBaseProps, "name">) {
+export function Qr(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgQr.name} {...props}>
+    <IconBase name={Qr.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgQr
+export default Qr

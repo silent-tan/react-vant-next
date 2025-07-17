@@ -27,11 +27,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgCashBackRecord(props: Omit<IconBaseProps, "name">) {
+export function CashBackRecord(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgCashBackRecord.name} {...props}>
+    <IconBase name={CashBackRecord.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgCashBackRecord
+export default CashBackRecord

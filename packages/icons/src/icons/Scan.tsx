@@ -18,11 +18,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgScan(props: Omit<IconBaseProps, "name">) {
+export function Scan(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgScan.name} {...props}>
+    <IconBase name={Scan.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgScan
+export default Scan

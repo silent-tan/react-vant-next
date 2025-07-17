@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgMapMarked(props: Omit<IconBaseProps, "name">) {
+export function MapMarked(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgMapMarked.name} {...props}>
+    <IconBase name={MapMarked.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgMapMarked
+export default MapMarked

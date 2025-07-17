@@ -27,11 +27,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgTodoListO(props: Omit<IconBaseProps, "name">) {
+export function TodoListO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgTodoListO.name} {...props}>
+    <IconBase name={TodoListO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgTodoListO
+export default TodoListO

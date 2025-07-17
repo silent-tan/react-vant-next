@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgPause(props: Omit<IconBaseProps, "name">) {
+export function Pause(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgPause.name} {...props}>
+    <IconBase name={Pause.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgPause
+export default Pause

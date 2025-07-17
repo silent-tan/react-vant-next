@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgColumn(props: Omit<IconBaseProps, "name">) {
+export function Column(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgColumn.name} {...props}>
+    <IconBase name={Column.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgColumn
+export default Column

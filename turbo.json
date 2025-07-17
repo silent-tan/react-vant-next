@@ -3,7 +3,7 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", "es/**", "lib/**"],
+      "outputs": ["dist/**", "es/**", "es/index.js", "lib/**", "lib/index.js"],
       "cache": true,
       "inputs": ["src/**", "package.json", "rollup.config.js", "rollup.config.ts", "tsconfig.json"]
     },

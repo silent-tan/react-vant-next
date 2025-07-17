@@ -22,11 +22,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgCashOnDeliver(props: Omit<IconBaseProps, "name">) {
+export function CashOnDeliver(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgCashOnDeliver.name} {...props}>
+    <IconBase name={CashOnDeliver.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgCashOnDeliver
+export default CashOnDeliver

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgBill(props: Omit<IconBaseProps, "name">) {
+export function Bill(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgBill.name} {...props}>
+    <IconBase name={Bill.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgBill
+export default Bill

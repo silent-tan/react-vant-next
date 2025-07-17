@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgShare(props: Omit<IconBaseProps, "name">) {
+export function Share(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgShare.name} {...props}>
+    <IconBase name={Share.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgShare
+export default Share

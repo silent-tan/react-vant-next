@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgLike(props: Omit<IconBaseProps, "name">) {
+export function Like(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgLike.name} {...props}>
+    <IconBase name={Like.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgLike
+export default Like

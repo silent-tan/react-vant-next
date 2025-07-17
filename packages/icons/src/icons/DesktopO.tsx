@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgDesktopO(props: Omit<IconBaseProps, "name">) {
+export function DesktopO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgDesktopO.name} {...props}>
+    <IconBase name={DesktopO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgDesktopO
+export default DesktopO

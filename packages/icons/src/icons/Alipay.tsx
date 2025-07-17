@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgAlipay(props: Omit<IconBaseProps, "name">) {
+export function Alipay(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgAlipay.name} {...props}>
+    <IconBase name={Alipay.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgAlipay
+export default Alipay

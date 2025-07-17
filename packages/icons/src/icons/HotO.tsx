@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgHotO(props: Omit<IconBaseProps, "name">) {
+export function HotO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgHotO.name} {...props}>
+    <IconBase name={HotO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgHotO
+export default HotO

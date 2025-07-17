@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgAwardO(props: Omit<IconBaseProps, "name">) {
+export function AwardO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgAwardO.name} {...props}>
+    <IconBase name={AwardO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgAwardO
+export default AwardO

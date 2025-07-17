@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgAim(props: Omit<IconBaseProps, "name">) {
+export function Aim(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgAim.name} {...props}>
+    <IconBase name={Aim.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgAim
+export default Aim

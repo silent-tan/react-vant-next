@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgCluster(props: Omit<IconBaseProps, "name">) {
+export function Cluster(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgCluster.name} {...props}>
+    <IconBase name={Cluster.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgCluster
+export default Cluster

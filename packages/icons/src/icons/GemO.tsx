@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgGemO(props: Omit<IconBaseProps, "name">) {
+export function GemO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgGemO.name} {...props}>
+    <IconBase name={GemO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgGemO
+export default GemO

@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgLive(props: Omit<IconBaseProps, "name">) {
+export function Live(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgLive.name} {...props}>
+    <IconBase name={Live.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgLive
+export default Live

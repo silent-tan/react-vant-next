@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgOrdersO(props: Omit<IconBaseProps, "name">) {
+export function OrdersO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgOrdersO.name} {...props}>
+    <IconBase name={OrdersO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgOrdersO
+export default OrdersO

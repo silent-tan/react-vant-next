@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgPrinter(props: Omit<IconBaseProps, "name">) {
+export function Printer(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgPrinter.name} {...props}>
+    <IconBase name={Printer.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgPrinter
+export default Printer

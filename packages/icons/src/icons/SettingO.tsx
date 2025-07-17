@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgSettingO(props: Omit<IconBaseProps, "name">) {
+export function SettingO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgSettingO.name} {...props}>
+    <IconBase name={SettingO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgSettingO
+export default SettingO

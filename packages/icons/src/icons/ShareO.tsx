@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgShareO(props: Omit<IconBaseProps, "name">) {
+export function ShareO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgShareO.name} {...props}>
+    <IconBase name={ShareO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgShareO
+export default ShareO

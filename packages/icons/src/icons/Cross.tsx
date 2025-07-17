@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgCross(props: Omit<IconBaseProps, "name">) {
+export function Cross(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgCross.name} {...props}>
+    <IconBase name={Cross.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgCross
+export default Cross

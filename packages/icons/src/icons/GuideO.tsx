@@ -19,11 +19,11 @@ function SvgIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-function SvgGuideO(props: Omit<IconBaseProps, "name">) {
+export function GuideO(props: Omit<IconBaseProps, "name">) {
   return (
-    <IconBase name={SvgGuideO.name} {...props}>
+    <IconBase name={GuideO.name} {...props}>
       <SvgIcon />
     </IconBase>
   )
 }
-export default SvgGuideO
+export default GuideO
